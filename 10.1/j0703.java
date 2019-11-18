@@ -18,7 +18,7 @@ public class j0703 {
     for(int j=0;j<i;j++) {
       fields = recs[j].split(",");
 	if(fields[5].equals("1401"))
-      pout1.println(fields[0]+","+fields[3]+","+fields[4]+","+Integer.valueOf(fields[5]).intValue() + 100+","+fields[5]);
+      pout1.println(fields[0]+","+fields[1]+","+fields[2]+","+fields[3]+","+fields[4]+","+fields[5]);
     }
     pout1.close();
 
@@ -28,7 +28,7 @@ public class j0703 {
     for(int j=0;j<i;j++) { 
       fields = recs[j].split(",");
 	if(fields[5].equals("1402"))
-      pout2.println(fields[0]+","+fields[3]+","+fields[4]+","+Integer.valueOf(fields[5]).intValue() + 100+","+fields[5]);
+      pout2.println(fields[0]+","+fields[1]+","+fields[2]+","+fields[3]+","+fields[4]+","+fields[5]);
     }
     pout2.close();
 
@@ -37,9 +37,10 @@ public class j0703 {
     PrintStream pout3 = new PrintStream(bout3);
     for(int j=0;j<i;j++) { 
       fields = recs[j].split(",");
-	if(fields[5].equals("1404"))
-      pout3.println(fields[0]+","+fields[3]+","+fields[4]+","+Integer.valueOf(fields[5]).intValue() + 100+","+fields[5]);
+	if(fields[5].equals("1403"))
+      pout3.println(fields[0]+","+fields[1]+","+fields[2]+","+fields[3]+","+fields[4]+","+fields[5]);
     }
     pout3.close();
+
   }
 }
